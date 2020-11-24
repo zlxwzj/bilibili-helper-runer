@@ -1,4 +1,4 @@
-# bilibli-helper-runer
+# bilibili-helper-runer
 使用github action持续运行最新版本[BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER) (即自动获取最新版本运行)
 ## 使用
 > 以下说明绝大部分来自[BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)说明文档以及图片  
@@ -80,14 +80,3 @@ userAgent可选参数列表
 *ps：如果尝试给关注的 up 投币十次后（保不准你关注的是年更up主），还没完成每日投币任务，则切换成热榜模式，给热榜视频投币*
 
 *投币数量代码做了处理，如果本日投币不能获得经验了，则不会投币，每天只投能获得经验的硬币。假设你设置每日投币 3 个，早上 7 点你自己投了 2 个硬币，则十点半时，程序只会投 1 个）*
-
-### 查看运行日志
-
-*展开 `Build With Maven` 通过 `DEBUG` 标签快速过滤日志，查看运行状态*  
-
-[Actions 运行日志详细查看教程](https://github.com/JunzhouLiu/BILIBILI-HELPER/issues/21)
-
-[日志示例](https://github.com/JunzhouLiu/BILIBILI-HELPER/runs/1256484004?check_suite_focus=true#step:4:5069)
-
-![图示](docs/IMG/debug1.png)
-![图示](docs/IMG/debug2.png)

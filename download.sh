@@ -1,5 +1,5 @@
 #!/bin/bash
-version=$(wget -qO- -t1 -T2 "https://github.com/JunzhouLiu/BILIBILI-HELPER/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g')
+version=$(wget -qO- -t1 -T2 "https://api.github.com/repos/JunzhouLiu/BILIBILI-HELPER/releases/latest" | grep "tag_name" | head -n 1 | awk -F ":" '{print $2}' | sed 's/\"//g;s/,//g;s/ //g;s/V//g')
 
 function installUnzip(){
   command -v apt >/dev/null 2>&1 && (apt-get update; apt-get install unzip -y; return;)
@@ -14,5 +14,5 @@ function download(){
   mv "BILIBILI-HELPER-v${1}.jar" "BILIBILI-HELPER.jar" -f
 }
 
-download $version
+download "$version"
 echo "下载完成"

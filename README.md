@@ -1,6 +1,16 @@
 # bilibili-helper-runer
+![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/NatsuSai/bilibili-helper-runer?include_prereleases)
+![GitHub](https://img.shields.io/github/license/NatsuSai/bilibili-helper-runer)  
 使用github action持续运行最新版本[BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER) (即自动获取最新版本运行)
-## 使用
+
+## 快速使用
+
+如果您之前是fork [BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER) 使用的话，那么您可以对本项目照搬之前的操作。  
+即配置好 DEDEUSERID、SESSDATA、BILI_JCT，开启 Actions 即可。
+
+本项目也可以直接修改fork后根目录下的 config 文件进行更加多的配置。由于本项目基本不怎么会更新，所以config覆盖问题也能够得到相应的缓解
+
+## 详细说明
 > 以下说明绝大部分来自[BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)说明文档以及图片  
 > 细节部分有做根据本项目对应修改  
 > 如有问题请结合本文档细节以及[BILIBILI-HELPER](https://github.com/JunzhouLiu/BILIBILI-HELPER)说明文档进行修改（或者提ISSUE）
